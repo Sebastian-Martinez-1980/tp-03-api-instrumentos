@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Banyo",
+    "familia": "Cuerda",
+    "origen": "África y Estados Unidos",
+    "descripcion": "Instrumento de cuerda con un cuerpo circular cubierto por una membrana, utilizado especialmente en la música folclórica y popular.",
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "nombre": "Charango",
+    "familia": "Cuerda",
+    "origen": "Región andina de Sudamérica",
+    "descripcion": "Instrumento de cuerda pequeño, tradicional de la región andina, utilizado en diversos géneros de música folclórica.",
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "nombre": "Arpa",
+    "familia": "Cuerda",
+    "origen": "Antigüedad, con desarrollo en diversas culturas",
+    "descripcion": "Instrumento de cuerda formado por un conjunto de cuerdas tensadas sobre un marco, que se ejecutan generalmente con los dedos.",
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "nombre": "Gaita",
+    "familia": "Viento",
+    "origen": "Europa",
+    "descripcion": "Instrumento de viento que utiliza una bolsa de aire para producir y mantener el sonido a través de tubos sonoros.",
+    "disponible": true
+  },
+  {
+    "id": 5,
+    "nombre": "Contrabajo",
+    "familia": "Cuerda",
+    "origen": "Europa",
+    "descripcion": "El instrumento de cuerda frotada más grande de la familia de las cuerdas orquestales. Se toca generalmente de pie y se apoya sobre el suelo mediante una pica.",
+    "disponible": true
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "tp-03-api-instrumentos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/archivos.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastian-Martinez-1980/tp-03-semana3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sebastian-Martinez-1980/tp-03-semana3/issues"
+  },
+  "homepage": "https://github.com/Sebastian-Martinez-1980/tp-03-semana3#readme"
+}
