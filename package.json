@@ -1,25 +1,26 @@
 {
   "name": "tp-03-api-instrumentos",
   "version": "1.0.0",
-  "description": "",
+  "description": "En este trabajo práctico se desarrolla una API HTTP utilizando Node.js y Express para administrar información sobre instrumentos musicales.\r La API permite realizar operaciones para consultar, crear, modificar y eliminar instrumentos mediante diferentes métodos HTTP.\r Cada instrumento contiene información como:\r •\tid \r •\tnombre \r •\tfamilia \r •\torigen \r •\tdescripcion \r •\tdisponible",
   "main": "index.js",
   "type": "commonjs",
-  "scripts": {
-    "start": "node src/index.js",
-    "check": "node --check src/index.js && node --check src/archivos.js"
+"scripts": {
+ "start": "node src/index.js",
+ "check": "node --check src/index.js && node --check src/archivos.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastian-Martinez-1980/tp-03-api-instrumentos.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebastian-Martinez-1980/tp-03-api-instrumentos/issues"
+  },
+  "homepage": "https://github.com/Sebastian-Martinez-1980/tp-03-api-instrumentos#readme",
   "dependencies": {
     "express": "^5.2.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sebastian-Martinez-1980/tp-03-semana3.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Sebastian-Martinez-1980/tp-03-semana3/issues"
-  },
-  "homepage": "https://github.com/Sebastian-Martinez-1980/tp-03-semana3#readme"
+  }
+  
 }

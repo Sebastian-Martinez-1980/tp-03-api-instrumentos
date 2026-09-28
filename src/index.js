@@ -1,43 +1,43 @@
 const path = require("node:path");
-const { leerJson } = require("./archivos.js");
+const express = require('express');
+const { leerJson, escribirTexto } = require("./archivos.js");
 const rutaDatos = path.join(__dirname, "..", "datos", "instrumentos.json");
 
 async function main() {
     try {
         console.log("Leyendo instrumentos... ");
-        const instrumentosJson = await leerJson(rutaDatos);
-        console.log(instrumentosJson);
+        const instrumentos = await leerJson(rutaDatos);
+        console.log(instrumentos);
 
 // Se verifica si están los datos seguir e iniciar el servidor
-const express = require('express');
 const app = express();
 const PORT = 3000;
 
 app.get("/", (req,res) => {
-    res.json({ mensaje: "API de Instrumentos disponible" });
+    res.status(200).json({ mensaje: "API de Instrumentos disponible" });
 });
 
-app.get('/instrumentos', async (req, res) => {
-    const nombre = req.query.nombre;
-    if (nombre) {
-        const resultado = instrumentosJson.filter(
-            instrumento => instrumento.nombre.toLowerCase() === nombre.toLowerCase()
-        );
-         res.json(resultado);
+app.get('/api/instrumentos', (req, res) => {
+    const familia = req.query.familia;
+    if (!familia) {
+         res.json(instrumentos);
     }
-    res.json(instrumentosJson);
+
+    const resultado = instrumentos.filter(instrumento => 
+        instrumento.familia.toLowerCase() === familia.toLowerCase()
+    );
+    res.json(resultado);
 });
 
 
 //Buscar por id
 
-app.get('/instrumentos/:id', async (req, res) => {
+app.get('/api/instrumentos/:id', async (req, res) => {
     const instrumentos = await leerJson(rutaDatos);
     const id = Number(req.params.id);
     const instrumento = instrumentos.find(
         instrumento => instrumento.id === id
     );
-
     if (!instrumento) {
         return res.status(404).json({
             error: 'Instrumento no encontrado'
